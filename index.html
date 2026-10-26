@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            transition: background-color 0.2s;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #counter {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        #coordinateBlock {
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        #coordinates {
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+
+    <section>
+        <h2>1. Счётчик</h2>
+
+        <button id="decrement">-</button>
+        <span id="counter">0</span>
+        <button id="increment">+</button>
+    </section>
+
+    <section>
+        <h2>2. Координаты мыши</h2>
+
+        <div id="coordinateBlock">
+            <div id="coordinates">x: 0, y: 0</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Изменение цвета страницы</h2>
+
+        <input
+            type="text"
+            id="colorInput"
+            placeholder="Введите цвет: red, blue, green..."
+        >
+    </section>
+
+</body>
+</html>
